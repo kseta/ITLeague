@@ -2,7 +2,6 @@ build:
     environment:
         php:
             version: 7.0.8
-
 checks:
     php:
         code_rating: true
@@ -21,5 +20,11 @@ tools:
     php_pdepend: true
     php_analyzer: true
     php_cpd: true
-    php_mess_detector: true
-    php_code_sniffer: true
+    php_mess_detector:
+        enabled: true
+        config:
+            ruleset: ./app/phpmd.xml
+    php_code_sniffer:
+        enabled: true
+        config:
+            ruleset: ./app/phpcs.xml
