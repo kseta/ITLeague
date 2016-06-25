@@ -1,0 +1,25 @@
+build:
+    environment:
+        php:
+            version: 7.0.8
+
+checks:
+    php:
+        code_rating: true
+        duplication: true
+filter:
+    excluded_paths:
+        - app/AppKernel.php
+        - app/AppCache.php
+        - app/check.php
+        - app/SymfonyRequirements.php
+        - web/app.php
+        - src/**/*Test.php
+tools:
+    php_code_coverage: true
+    php_mess_detector: true
+    php_pdepend: true
+    php_analyzer: true
+    php_cpd: true
+    php_mess_detector: true
+    php_code_sniffer: true
