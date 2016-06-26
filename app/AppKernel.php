@@ -25,10 +25,14 @@ class AppKernel extends Kernel
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'), true)) {
+            // Symfony Standard Bundles
             $bundles[] = new Symfony\Bundle\DebugBundle\DebugBundle();
             $bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
             $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
             $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
+            // OSS Bundles
+            $bundles[] = new Hautelook\AliceBundle\HautelookAliceBundle();
+            // Application Bundles
         }
 
         return $bundles;
