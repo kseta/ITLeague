@@ -1,0 +1,22 @@
+AppBundle\Entity\User:
+    admin_1}:
+        username: admin
+        email: admine@example.com
+        enabled: true
+        plainPassword: admin
+        roles: [ROLE_USER, ROLE_ADMIN]
+        usernameCanonical: <identity($username)>
+    admin_{2..5}:
+        username: <name()>
+        email: <email()>
+        enabled: true
+        plainPassword: <password()>
+        roles: [ROLE_USER, ROLE_ADMIN]
+        usernameCanonical: <identity($username)>
+    user_{1..10}:
+        username: <name()>
+        email: <email()>
+        enabled: true
+        plainPassword: <password()>
+        roles: [ROLE_USER]
+        usernameCanonical: <identity($username)>
