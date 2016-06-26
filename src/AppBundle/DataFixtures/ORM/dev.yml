@@ -20,3 +20,77 @@ AppBundle\Entity\User:
         plainPassword: <password()>
         roles: [ROLE_USER]
         usernameCanonical: <identity($username)>
+
+AppBundle\Entity\Team:
+    team_1:
+        name: ダブルクリック
+        shortName: DLC
+    team_2:
+        name: サイバーエージェンツ
+        shortName: CYA
+    team_3:
+        name: インテリジェンス
+        shortName: ITJ
+    team_4:
+        name: カカクコム
+        shortName: KKC
+    team_5:
+        name: ECナビ
+        shortName: ECN
+    team_6:
+        name: MTI
+        shortName: MTI
+    team_7:
+        name: 楽天
+        shortName: RT
+    team_8:
+        name: オープランズ
+        shortName: OPZ
+    team_9:
+        name: DIP
+        shortName: dip
+    team_10:
+        name: エン・ジャパン
+        shortName: EN
+    team_11:
+        name: フォトクリエイト
+        shortName: PCR
+    team_12:
+        name: GREE
+        shortName: GRE
+    team_13:
+        name: パソナテック
+        shortName: PST
+    team_14:
+        name: Yahoo!
+        shortName: YH
+    team_15:
+        name: ソフトバンクC&S
+        shortName: SBC
+    team_16:
+        name: CyberFields
+        shortName: CF
+    team_17:
+        name: 東京ロケットピストンズ
+        shortName: TRP
+    team_18:
+        name: オプト
+        shortName: OPT
+    team_19:
+        name: トランスコスモス
+        shortName: TRC
+    team_20:
+        name: BayCurrent
+        shortName: BC
+    team_21:
+        name: セプテーニ
+        shortName: CEP
+    team_22:
+        name: DeNA
+        shortName: DN
+    team_23:
+        name: Adways
+        shortName: ADW
+    team_24:
+        name: ソフトバンクテクノロジー
+        shortName: SBT
