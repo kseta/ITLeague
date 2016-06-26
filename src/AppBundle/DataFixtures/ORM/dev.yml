@@ -13,13 +13,22 @@ AppBundle\Entity\User:
         plainPassword: <password()>
         roles: [ROLE_USER, ROLE_ADMIN]
         usernameCanonical: <identity($username)>
-    user_{1..10}:
+    user_{1..40}:
         username: <name()>
         email: <email()>
         enabled: true
         plainPassword: <password()>
         roles: [ROLE_USER]
         usernameCanonical: <identity($username)>
+        player: @player_<current()>
+
+AppBundle\Entity\Player:
+    player_{1..40}:
+        name: @user_<current()>->username
+        number: <numberBetween(1, 99)>
+        teamId: <numberBetween(1, 2)>
+        userId: @user_<current()>->id
+        user: @user_<current()>
 
 AppBundle\Entity\Team:
     team_1:
