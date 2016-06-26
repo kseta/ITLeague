@@ -49,6 +49,12 @@ class Player
      */
     private $userId;
 
+    /**
+     * @ORM\OneToOne(targetEntity="User")
+     * @ORM\JoinColumn(name="user_id", referencedColumnName="id")
+     */
+    private $user;
+
 
     /**
      * Get id
@@ -150,5 +156,28 @@ class Player
     public function getUserId()
     {
         return $this->userId;
+    }
+
+    /**
+     * Set user
+     *
+     * @param User $user
+     * @return Player
+     */
+    public function setUser(User $user = null)
+    {
+        $this->user = $user;
+
+        return $this;
+    }
+
+    /**
+     * Get user
+     *
+     * @return User 
+     */
+    public function getUser()
+    {
+        return $this->user;
     }
 }

@@ -18,8 +18,36 @@ class User extends BaseUser
      */
     protected $id;
 
+    /**
+     * @ORM\OneToOne(targetEntity="Player", mappedBy="user")
+     */
+    private $player;
+
     public function __construct()
     {
         parent::__construct();
+    }
+
+    /**
+     * Set player
+     *
+     * @param Player $player
+     * @return User
+     */
+    public function setPlayer(Player $player = null)
+    {
+        $this->player = $player;
+
+        return $this;
+    }
+
+    /**
+     * Get player
+     *
+     * @return Player
+     */
+    public function getPlayer()
+    {
+        return $this->player;
     }
 }
