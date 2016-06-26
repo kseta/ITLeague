@@ -103,3 +103,7 @@ AppBundle\Entity\Team:
     team_24:
         name: ソフトバンクテクノロジー
         shortName: SBT
+
+AppBundle\Entity\League:
+    league_1:
+        name: IT LEAGUE
