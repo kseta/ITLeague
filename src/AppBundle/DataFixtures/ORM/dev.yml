@@ -1,5 +1,5 @@
 AppBundle\Entity\User:
-    admin_1}:
+    admin_1:
         username: admin
         email: admine@example.com
         enabled: true
