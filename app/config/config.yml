@@ -83,3 +83,4 @@ easy_admin:
         - AppBundle\Entity\User
         - AppBundle\Entity\Team
         - AppBundle\Entity\Player
+        - AppBundle\Entity\Game
