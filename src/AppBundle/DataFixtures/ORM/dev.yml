@@ -1,3 +1,13 @@
+AppBundle\Entity\Game:
+    game_1:
+        date: <(new \DateTime('2016-08-06'))>
+        name: game_1
+    game_2:
+        date: <(new \DateTime('2016-08-13'))>
+        name: game_2
+    game_3:
+        date: <(new \DateTime('2016-08-20'))>
+        name: game_3
 AppBundle\Entity\User:
     admin_1:
         username: admin
