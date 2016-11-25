@@ -19,7 +19,6 @@ class AppKernel extends Kernel
             // OSS Bundles
             new Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle(),
             new FOS\UserBundle\FOSUserBundle(),
-            new JavierEguiluz\Bundle\EasyAdminBundle\EasyAdminBundle(),
             // Application Bundles
             new AppBundle\AppBundle(),
         );

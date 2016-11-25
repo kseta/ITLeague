@@ -77,15 +77,3 @@ fos_user:
     firewall_name: main
     user_class: AppBundle\Entity\User
 
-# EasyAdmin Configuration
-easy_admin:
-    site_name: 'admin'
-    formats:
-        date:     'Y/m/d'
-        time:     'H:i'
-        datetime: 'Y/m/d H:i:s'
-    entities:
-        - AppBundle\Entity\User
-        - AppBundle\Entity\Team
-        - AppBundle\Entity\Player
-        - AppBundle\Entity\Game
