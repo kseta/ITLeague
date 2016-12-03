@@ -105,11 +105,16 @@ class Player implements EntityInterface
     /**
      * Get number
      *
-     * @return string 
+     * @return string
      */
     public function getNumber()
     {
         return $this->number;
+    }
+
+    public function getDisplayNumber()
+    {
+        return '#'.$this->number;
     }
 
     /**
