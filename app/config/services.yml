@@ -4,6 +4,15 @@ parameters:
 #    parameter_name: value
 
 services:
-#    service_name:
-#        class: AppBundle\Directory\ClassName
-#        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]
+    domain.repository.player:
+        class: AppBundle\Repository\PlayerRepository
+        factory: [ '@doctrine.orm.entity_manager', getRepository ]
+        arguments:
+            - AppBundle\Entity\Player
+
+    domain.usecase.query.search_player:
+        class: AppBundle\Usecase\SearchPlayerUsecase
+        arguments: [ '@domain.repository.player' ]
+
+    domain.criteria_builder.search_player:
+        class: AppBundle\Entity\Criteria\SearchPlayerCriteriaBuilder
