@@ -59,7 +59,7 @@ class Player implements EntityInterface
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -82,7 +82,7 @@ class Player implements EntityInterface
     /**
      * Get name
      *
-     * @return string 
+     * @return string
      */
     public function getName()
     {
@@ -128,7 +128,7 @@ class Player implements EntityInterface
     /**
      * Get teamId
      *
-     * @return integer 
+     * @return integer
      */
     public function getTeamId()
     {
@@ -151,7 +151,7 @@ class Player implements EntityInterface
     /**
      * Get userId
      *
-     * @return integer 
+     * @return integer
      */
     public function getUserId()
     {
@@ -174,7 +174,7 @@ class Player implements EntityInterface
     /**
      * Get user
      *
-     * @return User 
+     * @return User
      */
     public function getUser()
     {

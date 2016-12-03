@@ -39,7 +39,7 @@ class SeasonTeam implements EntityInterface
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -62,7 +62,7 @@ class SeasonTeam implements EntityInterface
     /**
      * Get seasonId
      *
-     * @return integer 
+     * @return integer
      */
     public function getSeasonId()
     {
@@ -85,7 +85,7 @@ class SeasonTeam implements EntityInterface
     /**
      * Get teamId
      *
-     * @return integer 
+     * @return integer
      */
     public function getTeamId()
     {

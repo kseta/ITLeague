@@ -53,7 +53,7 @@ class Season implements EntityInterface
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -76,7 +76,7 @@ class Season implements EntityInterface
     /**
      * Get name
      *
-     * @return string 
+     * @return string
      */
     public function getName()
     {
@@ -99,7 +99,7 @@ class Season implements EntityInterface
     /**
      * Get type
      *
-     * @return string 
+     * @return string
      */
     public function getType()
     {
@@ -122,7 +122,7 @@ class Season implements EntityInterface
     /**
      * Get year
      *
-     * @return string 
+     * @return string
      */
     public function getYear()
     {
@@ -145,7 +145,7 @@ class Season implements EntityInterface
     /**
      * Get leagueId
      *
-     * @return integer 
+     * @return integer
      */
     public function getLeagueId()
     {
