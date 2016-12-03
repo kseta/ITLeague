@@ -10,7 +10,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table(name="game")
  * @ORM\Entity(repositoryClass="AppBundle\Repository\GameRepository")
  */
-class Game
+class Game implements EntityInterface
 {
     /**
      * @var int
