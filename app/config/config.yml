@@ -77,3 +77,6 @@ fos_user:
     firewall_name: main
     user_class: AppBundle\Entity\User
 
+fos_rest:
+    view:
+       view_response_listener: force
