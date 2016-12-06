@@ -16,7 +16,10 @@ class SearchPlayerCriteriaBuilder implements CriteriaBuilderInterface
     public function build(): Criteria
     {
         $criteria = Criteria::create();
-        $criteria->andWhere($criteria->expr()->in('id', $this->playerIds));
+
+        if ($this->playerIds) {
+            $criteria->andWhere($criteria->expr()->in('id', $this->playerIds));
+        }
         $criteria->orderBy($this->orderBy);
 
         return $criteria;
