@@ -4,3 +4,7 @@ app:
 
 fos_user:
     resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+
+api_player:
+    resource: "@AppBundle/Controller/PlayerController.php"
+    type: rest
