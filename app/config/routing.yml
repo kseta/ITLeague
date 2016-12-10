@@ -13,4 +13,5 @@ fos_oauth_server_authorize:
 
 api_player:
     resource: "@AppBundle/Controller/PlayerController.php"
+    prefix: /api
     type: rest
