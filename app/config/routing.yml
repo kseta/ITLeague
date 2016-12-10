@@ -12,6 +12,6 @@ fos_oauth_server_authorize:
     resource: "@FOSOAuthServerBundle/Resources/config/routing/authorize.xml"
 
 api_player:
-    resource: "@AppBundle/Controller/PlayerController.php"
+    resource: "@AppBundle/Controller/API/PlayerController.php"
     prefix: /api
     type: rest
